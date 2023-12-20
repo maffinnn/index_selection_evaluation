@@ -1,6 +1,5 @@
 from functools import total_ordering
 
-
 @total_ordering
 class Index:
     def __init__(self, columns, estimated_size=None):
@@ -10,7 +9,7 @@ class Index:
         # Store hypopg estimated size when `store_size=True` (whatif)
         self.estimated_size = estimated_size
         self.hypopg_name = None
-
+        
     # Used to sort indexes
     def __lt__(self, other):
         if len(self.columns) != len(other.columns):
@@ -95,8 +94,8 @@ class Index:
 
 # A merged index is the best index that can answer all requests that either previous
 # index did. Merging I_1(K_1;S_1) and I_2(K_2;S_2) results in
-# I_1_2 = (K1;(S_1 âˆª K_2 âˆª S_2) - K_1).
-# If K_1 is a prefix of K_2, I_1_2 = (K2; (S_1 âˆª S_2) - K_2)).
+# I_1_2 = (K1;(S_1 âˆ? K_2 âˆ? S_2) - K_1).
+# If K_1 is a prefix of K_2, I_1_2 = (K2; (S_1 âˆ? S_2) - K_2)).
 # Returns the merged index.
 def index_merge(index_1, index_2):
     assert index_1.table() == index_2.table()
@@ -109,7 +108,7 @@ def index_merge(index_1, index_2):
 
 # Splitting two indexes produces a common index I_C and at most two additional
 # residual indexes I_R1 and I_R2. Splitting I_1(K_1;S_1) and I_2(K_2;S_2):
-# I_C = (K_C;S_C) with K_C = K_1 âˆ© K_2 and S_C = S_1 âˆ© S_2 where K_C cannot be empty.
+# I_C = (K_C;S_C) with K_C = K_1 âˆ? K_2 and S_C = S_1 âˆ? S_2 where K_C cannot be empty.
 # Split is undefined if K_1 and K_2 have no common columns. If K_1 and K_C are different:
 # I_R_1 = (K_1 - K_C, I_1 - I_C) and if K_2 and K_C are different
 # I_R_2 = (K_2 - K_C, I_2 - I_C).
