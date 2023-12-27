@@ -31,7 +31,7 @@ def index_conversion(indexes):
             index_new.append(','.join(indexes_s[start:end+1])[1:-1])
             start = 0
         elif start == 0:
-            print(indexes_s[i])
+            # print(indexes_s[i])
             index_new.append(indexes_s[i])
 
     return index_new

@@ -2,15 +2,31 @@
 import json
 import csv
 import logging
+import itertools
 
 from selection.index_selection_evaluation import DBMSYSTEMS
 from selection.query_generator import QueryGenerator
 from selection.table_generator import TableGenerator
 from selection.what_if_index_creation import WhatIfIndexCreation
+from selection.cost_evaluation import CostEvaluation
 from selection.workload import Workload
-from selection.candidate_generation import syntactically_relevant_indexes
+from selection.index import Index, index_merge
+from selection.candidate_generation import syntactically_relevant_indexes, candidates_per_query
+from selection.utils import get_utilized_indexes, indexes_by_table
 
         
+def add_merged_indexes(self, indexes):
+    index_table_dict = indexes_by_table(indexes)
+    for table in index_table_dict:
+        for index1, index2 in itertools.permutations(index_table_dict[table], 2):
+            merged_index = index_merge(index1, index2)
+            if len(merged_index.columns) > self.max_index_width:
+                new_columns = merged_index.columns[: self.max_index_width]
+                merged_index = Index(new_columns)
+            if merged_index not in indexes:
+                self.cost_evaluation.estimate_size(merged_index)
+                indexes.add(merged_index)
+                
 def run():
     config_file = "config.json"
     with open(config_file) as f:
@@ -30,21 +46,25 @@ def run():
         table_generator.columns,
     )
     workload = Workload(query_generator.queries)
+    cost_evaluation = CostEvaluation(db_connector)
     for table in table_generator.tables:
         row_count = db_connector.table_row_count(table.name)
         table.set_row_count(row_count)
         for column in table.columns:
             card = db_connector.get_column_cardinality(column)
             column.set_cardinality(-card * row_count if card < 0 else card)
-    query_plans_with_index, query_costs_with_index, query_plans = {}, {}, []
+            
+    # Generate syntactically relevant candidates
+    candidates = candidates_per_query(workload,2,candidate_generator=syntactically_relevant_indexes)
+    # Obtain utilized indexes per query
+    candidates, _ = get_utilized_indexes(workload, candidates, cost_evaluation)
+    query_plans_with_index, query_costs_with_index = {}, {}
     for query in workload.queries:
         logging.info(f"Now generating statistics for query {query.nr}.")
         original_query_plan = db_connector.get_plan_with_statistics(query)
         query_plans_with_index[(query, None)] = original_query_plan
         query_costs_with_index[(query, None)] = db_connector.get_cost(query)
-        query_plans.append(original_query_plan)
         indexes = syntactically_relevant_indexes(query, 2)
-        indexes = indexes[int(0.5*len(indexes))]
         for index in indexes:
             what_if.simulate_index(index)
             indexed_query_plan = db_connector.get_plan_with_statistics(query)
@@ -58,9 +78,9 @@ def run():
             #     original_query_plan = query_plans_with_index[(query, None)]
             #     data = [str([query.nr,query.text]), str([[], index]), str([original_query_cost,query_costs_with_index[(query, index)]]), str([original_query_plan,indexed_query_plan])]
             #     writer.writerow(data)
-            query_plans.append(indexed_query_plan)
         logging.info(f"Query {query.nr} statistics is completed.")
-    return query_plans_with_index, query_costs_with_index, query_plans
+        
+    return query_plans_with_index, query_costs_with_index
 
 
 
