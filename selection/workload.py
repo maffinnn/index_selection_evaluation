@@ -41,6 +41,9 @@ class Column:
     
     def set_cardinality(self, cardinality):
         self.cardinality = cardinality
+        
+    def set_null_fraction(self, null_frac):
+        self.null_frac = null_frac
 
     def __lt__(self, other):
         return self.name < other.name
