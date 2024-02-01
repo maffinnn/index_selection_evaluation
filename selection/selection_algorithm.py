@@ -72,14 +72,3 @@ class AllIndexesAlgorithm(SelectionAlgorithm):
     # Returns single column index for each indexable column
     def _calculate_best_indexes(self, workload):
         return workload.potential_indexes()
-    
-
-# not used
-class OneIndexAlgorithm(SelectionAlgorithm):
-    def __init__(self, database_connector, parameters=None):
-        if parameters is None:
-            parameters = {}
-        SelectionAlgorithm.__init__(self, database_connector, parameters)
-
-    def _calculate_best_indexes(self, workload):
-        return self.parameters["index"]

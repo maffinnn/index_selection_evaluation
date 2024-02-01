@@ -110,9 +110,6 @@ class DatabaseConnector:
     def set_random_seed(self, value):
         raise NotImplementedError
 
-    def _get_cost(self, query):
-        raise NotImplementedError
-
     def _get_plan(self, query):
         raise NotImplementedError
 
@@ -120,7 +117,4 @@ class DatabaseConnector:
         raise NotImplementedError
 
     def _drop_simulated_index(self, identifier):
-        raise NotImplementedError
-
-    def clean_up(self):
         raise NotImplementedError

@@ -193,6 +193,7 @@ class IndexSelection:
                 return argument
 
     def setup_db_connector(self, database_name, database_system):
+        print("Setting up db connector")
         if self.db_connector:
             logging.info("Create new database connector (closing old)")
             self.db_connector.close()

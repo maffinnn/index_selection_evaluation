@@ -1,0 +1,23 @@
+SELECT attname, null_frac, n_distinct
+FROM pg_stats
+WHERE schemaname = 'public'
+ORDER BY attname;
+
+SELECT relname as tablename, n_tup_ins - n_tup_del as rowcount FROM pg_stat_all_tables WHERE schemaname = 'public';
+
+
+create table catalog_page
+(
+    cp_catalog_page_sk        integer               not null,
+    cp_catalog_page_id        char(16)              not null,
+    cp_start_date_sk          integer                       ,
+    cp_end_date_sk            integer                       ,
+    cp_department             varchar(50)                   ,
+    cp_catalog_number         integer                       ,
+    cp_catalog_page_number    integer                       ,
+    cp_description            varchar(100)                  ,
+    cp_type                   varchar(100)                  
+);
+
+
+select distinct(tablename) from pg_stats where schemaname = 'public';

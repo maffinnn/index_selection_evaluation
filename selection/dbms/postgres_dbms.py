@@ -93,6 +93,7 @@ class PostgresDatabaseConnector(DatabaseConnector):
         logging.info(f"Database {database_name} dropped")
 
     def create_statistics(self):
+        print("Postgres: Run `analyze`")
         logging.info("Postgres: Run `analyze`")
         self.commit()
         self._connection.autocommit = True
@@ -177,15 +178,8 @@ class PostgresDatabaseConnector(DatabaseConnector):
 
     def _get_cost(self, query):
         query_plan = self._get_plan(query)
-        total_cost = self._get_cost_recursive(query_plan)
+        total_cost = query_plan["Total Cost"]
         return total_cost
-    
-    def _get_cost_recursive(self, query_plan):
-        cost = 0
-        if "Plans" in query_plan.keys():
-            for plan in query_plan["Plans"]:
-                cost += self._get_cost_recursive(plan)
-        return cost + query_plan["Total Cost"]
 
     def _get_plan(self, query):
         query_text = self._prepare_query(query)

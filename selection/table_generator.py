@@ -41,6 +41,7 @@ class TableGenerator:
         return name
 
     def _read_column_names(self):
+        print("Reading column names")
         # Read table and column names from 'create table' statements
         filename = self.directory + "/" + self.create_table_statements_file
         with open(filename, "r") as file:
@@ -60,6 +61,7 @@ class TableGenerator:
                 self.columns.append(column_object)
 
     def _generate(self):
+        print("Generating {} data".format(self.benchmark_name))
         logging.info("Generating {} data".format(self.benchmark_name))
         logging.info("scale factor: {}".format(self.scale_factor))
         self._run_make()
@@ -80,9 +82,10 @@ class TableGenerator:
         self.db_connector.db_name = self.database_name()
         self.db_connector.create_connection()
         self.create_tables(create_statements)
-        self._load_table_data(self.db_connector)
-        self._get_table_statistics(self.db_connector)
-        self.db_connector.enable_simulation()
+        # self._load_table_data(self.db_connector)
+        # self._get_table_statistics(self.db_connector)
+        # self.db_connector.enable_simulation()
+        # print("Database created")
 
     def create_tables(self, create_statements):
         logging.info("Creating tables")
@@ -91,15 +94,14 @@ class TableGenerator:
         self.db_connector.commit()
 
     def _load_table_data(self, database_connector):
-        logging.info("Loading data into the tables")
+        print("Loading data into the tables")
         for filename in self.table_files:
-            logging.debug("    Loading file {}".format(filename))
-
+            print("    Loading file {}".format(filename))
             table = filename.replace(".tbl", "").replace(".dat", "")
             path = self.directory + "/" + filename
             size = os.path.getsize(path)
             size_string = f"{b_to_mb(size):,.4f} MB"
-            logging.debug(f"    Import data of size {size_string}")
+            print(f"    Import data of size {size_string}, path {path}")
             database_connector.import_data(table, path)
             os.remove(os.path.join(self.directory, filename))
         database_connector.commit()
@@ -121,6 +123,7 @@ class TableGenerator:
 
     def _table_files(self):
         self.table_files = [x for x in self._files() if ".tbl" in x or ".dat" in x]
+        print(f"Files generated: {self.table_files}")
 
     def _run_command(self, command):
         cmd_out = "[SUBPROCESS OUTPUT] "
@@ -139,6 +142,7 @@ class TableGenerator:
         return os.listdir(self.directory)
 
     def _prepare(self):
+        print("Prepare to load table")
         if self.benchmark_name == "tpch":
             self.make_command = ["make", "DATABASE=POSTGRESQL"]
             if platform.system() == "Darwin":
@@ -162,5 +166,21 @@ class TableGenerator:
                 and self.scale_factor != 0.001
             ):
                 raise Exception("Wrong TPCDS scale factor")
+        elif self.benchmark_name == "dsb":
+            self.make_command = ["make"]
+            if platform.system() == "Darwin":
+                self.make_command.append("OS=MACOS")
+
+            self.directory = "./dsb/code/tools"
+            self.create_table_statements_file = "tpcds.sql"
+            self.cmd = ["./dsdgen", "-SCALE", str(self.scale_factor), "-FORCE"]
+
+            # 0.001 is allowed for testing
+            if (
+                int(self.scale_factor) - self.scale_factor != 0
+                and self.scale_factor != 0.001
+            ):
+                raise Exception("Wrong TPCDS scale factor")
         else:
             raise NotImplementedError("only tpch/ds implemented.")
+        print("Loading table done")

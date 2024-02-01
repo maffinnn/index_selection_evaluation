@@ -5,6 +5,7 @@ from selection.index import Index
 
 
 def candidates_per_query(workload, max_index_width, candidate_generator):
+    print("Generate candidates")
     candidates = []
 
     for query in workload.queries:
@@ -33,6 +34,6 @@ def syntactically_relevant_indexes(query, max_index_width):
             possible_column_combinations |= set(
                 itertools.permutations(columns, index_length)
             )
-
-    logging.debug(f"Potential indexes: {len(possible_column_combinations)}")
+            
+    print(f"Potential indexes: {len(possible_column_combinations)}")
     return [Index(p) for p in possible_column_combinations]

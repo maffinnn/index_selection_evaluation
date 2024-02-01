@@ -3,6 +3,8 @@ import os
 import platform
 import re
 import subprocess
+import re
+import glob
 
 from selection.workload import Query
 
@@ -93,6 +95,20 @@ class QueryGenerator:
             query_text = id_and_text[1]
             query_text = self._update_tpcds_query_text(query_text)
             self.add_new_query(query_id, query_text)
+            
+    def _generate_dsb(self):
+        logging.info("Generating DSB Queries")
+        # command = ["dsb/generate_workload.py"]
+        # self._run_command(command)
+        output_dir = "dsb/exp/workload/1"
+        subdirectories = os.listdir(output_dir)
+        for subdir in subdirectories:
+            query_id = int(re.findall(r"\d{3}", subdir)[0])
+            sql_files = glob.glob(os.path.join(output_dir, subdir, "query*.sql"))[:3]
+            for sql_file in sql_files:
+                with open(os.path.join(output_dir, subdir, os.path.basename(sql_file)), "r") as file:
+                    query_text = file.read()
+                    self.add_new_query(query_id, query_text)
 
     # This manipulates TPC-DS specific queries to work in more DBMSs
     def _update_tpcds_query_text(self, query_text):
@@ -152,7 +168,12 @@ class QueryGenerator:
             self.make_command = ["make"]
             if platform.system() == "Darwin":
                 self.make_command.append("OS=MACOS")
-
             self._generate_tpcds()
+        elif self.benchmark_name == "dsb":
+            self.directory = "./dsb/code/tools"
+            self.make_command = ["make"]
+            if platform.system() == "Darwin":
+                self.make_command.append("OS=MACOS")
+            self._generate_dsb()
         else:
             raise NotImplementedError("only tpch/tpcds implemented.")
