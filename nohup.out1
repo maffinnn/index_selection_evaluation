@@ -1,0 +1,548 @@
+Current running pid: 5934
+Prepare to load table
+Loading table done
+Reading column names
+Current running pid: 7698
+Prepare to load table
+Loading table done
+Reading column names
+Generate candidates
+Potential indexes: 55
+Potential indexes: 55
+Potential indexes: 55
+Potential indexes: 120
+Potential indexes: 120
+Potential indexes: 120
+Potential indexes: 175
+Potential indexes: 175
+Potential indexes: 175
+Potential indexes: 110
+Potential indexes: 110
+Potential indexes: 110
+Potential indexes: 62
+Potential indexes: 62
+Potential indexes: 62
+Potential indexes: 111
+Potential indexes: 111
+Potential indexes: 111
+Potential indexes: 97
+Potential indexes: 97
+Potential indexes: 97
+Potential indexes: 67
+Potential indexes: 67
+Potential indexes: 67
+Potential indexes: 81
+Potential indexes: 81
+Potential indexes: 81
+Potential indexes: 84
+Potential indexes: 84
+Potential indexes: 84
+Potential indexes: 92
+Potential indexes: 92
+Potential indexes: 92
+Potential indexes: 57
+Potential indexes: 57
+Potential indexes: 57
+Potential indexes: 104
+Potential indexes: 104
+Potential indexes: 104
+Potential indexes: 101
+Potential indexes: 101
+Potential indexes: 101
+Potential indexes: 159
+Potential indexes: 159
+Potential indexes: 159
+Potential indexes: 201
+Potential indexes: 201
+Potential indexes: 201
+Potential indexes: 205
+Potential indexes: 205
+Potential indexes: 205
+Potential indexes: 79
+Potential indexes: 79
+Potential indexes: 79
+Potential indexes: 313
+Potential indexes: 313
+Potential indexes: 313
+Potential indexes: 73
+Potential indexes: 73
+Potential indexes: 73
+Potential indexes: 263
+Potential indexes: 263
+Potential indexes: 263
+Potential indexes: 144
+Potential indexes: 144
+Potential indexes: 144
+Potential indexes: 91
+Potential indexes: 91
+Potential indexes: 91
+Potential indexes: 144
+Potential indexes: 144
+Potential indexes: 144
+Potential indexes: 56
+Potential indexes: 56
+Potential indexes: 56
+Potential indexes: 145
+Potential indexes: 145
+Potential indexes: 145
+Potential indexes: 102
+Potential indexes: 102
+Potential indexes: 102
+Potential indexes: 73
+Potential indexes: 73
+Potential indexes: 73
+Potential indexes: 82
+Potential indexes: 82
+Potential indexes: 82
+Potential indexes: 94
+Potential indexes: 94
+Potential indexes: 94
+Potential indexes: 45
+Potential indexes: 45
+Potential indexes: 45
+Potential indexes: 45
+Potential indexes: 45
+Potential indexes: 45
+Potential indexes: 178
+Potential indexes: 178
+Potential indexes: 178
+Potential indexes: 318
+Potential indexes: 318
+Potential indexes: 318
+Potential indexes: 301
+Potential indexes: 301
+Potential indexes: 301
+Potential indexes: 132
+Potential indexes: 132
+Potential indexes: 132
+Potential indexes: 77
+Potential indexes: 77
+Potential indexes: 77
+111 candidates are generated
+iteration no: 48: 
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 49: 
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 50: 
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 51: 
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 52: 
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 53: 
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 54: 
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 55: 
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 56: 
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 57: 
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 58: 
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 59: 
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 60: 
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 61: 
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 62: 
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 63: 
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 64: 
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 65: 
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 66: 
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 67: 
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+Traceback (most recent call last):
+  File "./data_gen.py", line 103, in <module>
+    run()
+  File "./data_gen.py", line 80, in run
+    cost_evaluation._prepare_cost_calculation(index_config)
+  File "/home/shijiachen/fyp/index_selection_evaluation/selection/cost_evaluation.py", line 84, in _prepare_cost_calculation
+    self._simulate_or_create_index(index, store_size=store_size)
+  File "/home/shijiachen/fyp/index_selection_evaluation/selection/cost_evaluation.py", line 94, in _simulate_or_create_index
+    self.db_connector.create_index(index)
+  File "/home/shijiachen/fyp/index_selection_evaluation/selection/dbms/postgres_dbms.py", line 134, in create_index
+    self.exec_only(statement)
+  File "/home/shijiachen/fyp/index_selection_evaluation/selection/database_connector.py", line 19, in exec_only
+    self._cursor.execute(statement)
+psycopg2.errors.DuplicateTable: relation "date_dim_d_date_sk_d_year_idx" already exists
+

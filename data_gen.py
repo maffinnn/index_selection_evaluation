@@ -66,7 +66,7 @@ def run():
     number_of_actual_runs = 4
 
     filename = "../data/DSB/dsb.csv"
-    iter = 48
+    iter = 67
     for query, candidate_per_query in zip(workload.queries[iter:], candidates[iter:]):
         print(f"iteration no: {iter}: ")
         entry = [[query.nr, query.text]]

@@ -86,6 +86,7 @@ class CostEvaluation:
             self._unsimulate_or_drop_index(index)
 
         assert self.current_indexes == set(indexes)
+        print(f"\tcurrent index config: {self.current_indexes}")
 
     def _simulate_or_create_index(self, index, store_size=False):
         if self.cost_estimation == "whatif":

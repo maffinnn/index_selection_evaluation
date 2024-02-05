@@ -1,8 +1,4 @@
-Current running pid: 5934
-Prepare to load table
-Loading table done
-Reading column names
-Current running pid: 7698
+Current running pid: 7878
 Prepare to load table
 Loading table done
 Reading column names
@@ -119,35 +115,21 @@ Potential indexes: 77
 Potential indexes: 77
 Potential indexes: 77
 111 candidates are generated
-iteration no: 48: 
+iteration no: 67: 
+	current index config: set()
 	now running the 0th run on 0th index config
 	now running the 1th run on 0th index config
 	now running the 2th run on 0th index config
 	now running the 3th run on 0th index config
+	current index config: {I(C customer_demographics.cd_marital_status,C customer_demographics.cd_demo_sk)}
 	now running the 0th run on 1th index config
 	now running the 1th run on 1th index config
 	now running the 2th run on 1th index config
 	now running the 3th run on 1th index config
+	current index config: {I(C store_returns.sr_store_sk), I(C store_returns.sr_returned_date_sk,C store_returns.sr_customer_sk)}
 	now running the 0th run on 2th index config
 	now running the 1th run on 2th index config
 	now running the 2th run on 2th index config
 	now running the 3th run on 2th index config
+	current index config: {I(C customer_demographics.cd_education_status,C customer_demographics.cd_gender), I(C customer.c_birth_month,C customer.c_current_cdemo_sk), I(C date_dim.d_date_sk)}
 	now running the 0th run on 3th index config
-	now running the 1th run on 3th index config
-	now running the 2th run on 3th index config
-	now running the 3th run on 3th index config
-	now running the 0th run on 4th index config
-	now running the 1th run on 4th index config
-	now running the 2th run on 4th index config
-	now running the 3th run on 4th index config
-iteration no: 49: 
-	now running the 0th run on 0th index config
-	now running the 1th run on 0th index config
-	now running the 2th run on 0th index config
-	now running the 3th run on 0th index config
-	now running the 0th run on 1th index config
-	now running the 1th run on 1th index config
-	now running the 2th run on 1th index config
-	now running the 3th run on 1th index config
-	now running the 0th run on 2th index config
-	now running the 1th run on 2th index config
