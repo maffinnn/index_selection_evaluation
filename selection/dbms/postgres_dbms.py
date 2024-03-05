@@ -242,3 +242,11 @@ class PostgresDatabaseConnector(DatabaseConnector):
             WHERE idx.indrelid::regclass = '{table_name}'::regclass;"""
         result = self.exec_fetch(statement)
         return result[0]
+    
+    
+    def generate_column_statistics(self, table_name, attribute_name):
+        statement = f"""SELECT attname, null_frac, avg_width, n_distinct, most_common_vals, histogram_bounds, correlation
+                        FROM pg_stats WHERE tablename='{table_name}' AND attname='{attribute_name}';"""
+        result = self.exec_fetch(statement)
+        return result
+        

@@ -1,0 +1,250 @@
+Current running pid: 7878
+Prepare to load table
+Loading table done
+Reading column names
+Generate candidates
+Potential indexes: 55
+Potential indexes: 55
+Potential indexes: 55
+Potential indexes: 120
+Potential indexes: 120
+Potential indexes: 120
+Potential indexes: 175
+Potential indexes: 175
+Potential indexes: 175
+Potential indexes: 110
+Potential indexes: 110
+Potential indexes: 110
+Potential indexes: 62
+Potential indexes: 62
+Potential indexes: 62
+Potential indexes: 111
+Potential indexes: 111
+Potential indexes: 111
+Potential indexes: 97
+Potential indexes: 97
+Potential indexes: 97
+Potential indexes: 67
+Potential indexes: 67
+Potential indexes: 67
+Potential indexes: 81
+Potential indexes: 81
+Potential indexes: 81
+Potential indexes: 84
+Potential indexes: 84
+Potential indexes: 84
+Potential indexes: 92
+Potential indexes: 92
+Potential indexes: 92
+Potential indexes: 57
+Potential indexes: 57
+Potential indexes: 57
+Potential indexes: 104
+Potential indexes: 104
+Potential indexes: 104
+Potential indexes: 101
+Potential indexes: 101
+Potential indexes: 101
+Potential indexes: 159
+Potential indexes: 159
+Potential indexes: 159
+Potential indexes: 201
+Potential indexes: 201
+Potential indexes: 201
+Potential indexes: 205
+Potential indexes: 205
+Potential indexes: 205
+Potential indexes: 79
+Potential indexes: 79
+Potential indexes: 79
+Potential indexes: 313
+Potential indexes: 313
+Potential indexes: 313
+Potential indexes: 73
+Potential indexes: 73
+Potential indexes: 73
+Potential indexes: 263
+Potential indexes: 263
+Potential indexes: 263
+Potential indexes: 144
+Potential indexes: 144
+Potential indexes: 144
+Potential indexes: 91
+Potential indexes: 91
+Potential indexes: 91
+Potential indexes: 144
+Potential indexes: 144
+Potential indexes: 144
+Potential indexes: 56
+Potential indexes: 56
+Potential indexes: 56
+Potential indexes: 145
+Potential indexes: 145
+Potential indexes: 145
+Potential indexes: 102
+Potential indexes: 102
+Potential indexes: 102
+Potential indexes: 73
+Potential indexes: 73
+Potential indexes: 73
+Potential indexes: 82
+Potential indexes: 82
+Potential indexes: 82
+Potential indexes: 94
+Potential indexes: 94
+Potential indexes: 94
+Potential indexes: 45
+Potential indexes: 45
+Potential indexes: 45
+Potential indexes: 45
+Potential indexes: 45
+Potential indexes: 45
+Potential indexes: 178
+Potential indexes: 178
+Potential indexes: 178
+Potential indexes: 318
+Potential indexes: 318
+Potential indexes: 318
+Potential indexes: 301
+Potential indexes: 301
+Potential indexes: 301
+Potential indexes: 132
+Potential indexes: 132
+Potential indexes: 132
+Potential indexes: 77
+Potential indexes: 77
+Potential indexes: 77
+111 candidates are generated
+iteration no: 67: 
+	current index config: set()
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	current index config: {I(C customer_demographics.cd_marital_status,C customer_demographics.cd_demo_sk)}
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	current index config: {I(C store_returns.sr_store_sk), I(C store_returns.sr_returned_date_sk,C store_returns.sr_customer_sk)}
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	current index config: {I(C customer_demographics.cd_education_status,C customer_demographics.cd_gender), I(C customer.c_birth_month,C customer.c_current_cdemo_sk), I(C date_dim.d_date_sk)}
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	current index config: {I(C customer.c_birth_year), I(C customer_demographics.cd_education_status,C customer_demographics.cd_marital_status), I(C store_returns.sr_return_quantity,C store_returns.sr_returned_date_sk), I(C store_returns.sr_store_sk,C store_returns.sr_reason_sk)}
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 68: 
+	current index config: set()
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	current index config: {I(C customer.c_customer_sk,C customer.c_customer_id)}
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	current index config: {I(C customer.c_current_cdemo_sk), I(C store_returns.sr_customer_sk)}
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	current index config: {I(C store.s_state), I(C store_returns.sr_reason_sk,C store_returns.sr_return_quantity), I(C date_dim.d_date,C date_dim.d_year)}
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	current index config: {I(C customer_demographics.cd_marital_status), I(C store_returns.sr_customer_sk), I(C store_returns.sr_reason_sk,C store_returns.sr_returned_date_sk), I(C customer.c_birth_year,C customer.c_customer_id)}
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 69: 
+	current index config: set()
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	current index config: {I(C store_sales.ss_customer_sk,C store_sales.ss_quantity)}
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	current index config: {I(C store_sales.ss_quantity,C store_sales.ss_item_sk), I(C store_sales.ss_wholesale_cost,C store_sales.ss_sales_price)}
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	current index config: {I(C store_sales.ss_item_sk,C store_sales.ss_customer_sk), I(C web_sales.ws_list_price), I(C item.i_item_desc,C item.i_manager_id)}
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	current index config: {I(C web_sales.ws_wholesale_cost,C web_sales.ws_sold_date_sk), I(C customer.c_customer_sk,C customer.c_birth_year), I(C store_sales.ss_sales_price,C store_sales.ss_quantity), I(C date_dim.d_date,C date_dim.d_moy)}
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 70: 
+	current index config: set()
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	current index config: {I(C store_sales.ss_wholesale_cost,C store_sales.ss_sales_price)}
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	current index config: {I(C web_sales.ws_quantity,C web_sales.ws_wholesale_cost), I(C store_sales.ss_customer_sk)}
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	current index config: {I(C store_sales.ss_wholesale_cost,C store_sales.ss_customer_sk), I(C web_sales.ws_sold_date_sk,C web_sales.ws_wholesale_cost), I(C customer.c_customer_sk,C customer.c_birth_year)}
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	current index config: {I(C web_sales.ws_item_sk,C web_sales.ws_quantity), I(C catalog_sales.cs_list_price,C catalog_sales.cs_wholesale_cost), I(C store_sales.ss_sales_price,C store_sales.ss_sold_date_sk), I(C date_dim.d_year,C date_dim.d_date_sk)}
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 71: 
+	current index config: set()
+	now running the 0th run on 0th index config
+	now running the 1th run on 0th index config
+	now running the 2th run on 0th index config
+	now running the 3th run on 0th index config
+	current index config: {I(C store_sales.ss_customer_sk,C store_sales.ss_item_sk)}
+	now running the 0th run on 1th index config
+	now running the 1th run on 1th index config
+	now running the 2th run on 1th index config
+	now running the 3th run on 1th index config
+	current index config: {I(C store_sales.ss_wholesale_cost), I(C item.i_item_sk,C item.i_item_desc)}
+	now running the 0th run on 2th index config
+	now running the 1th run on 2th index config
+	now running the 2th run on 2th index config
+	now running the 3th run on 2th index config
+	current index config: {I(C web_sales.ws_item_sk,C web_sales.ws_wholesale_cost), I(C customer.c_customer_sk,C customer.c_birth_year), I(C date_dim.d_date_sk,C date_dim.d_moy)}
+	now running the 0th run on 3th index config
+	now running the 1th run on 3th index config
+	now running the 2th run on 3th index config
+	now running the 3th run on 3th index config
+	current index config: {I(C web_sales.ws_wholesale_cost,C web_sales.ws_sold_date_sk), I(C item.i_manager_id), I(C catalog_sales.cs_quantity,C catalog_sales.cs_wholesale_cost), I(C item.i_category)}
+	now running the 0th run on 4th index config
+	now running the 1th run on 4th index config
+	now running the 2th run on 4th index config
+	now running the 3th run on 4th index config
+iteration no: 72: 
+	current index config: set()
+	now running the 0th run on 0th index config

@@ -51,6 +51,8 @@ def run():
     database_name = table_generator.database_name()
     database_system = config["database_system"]
     db_connector = DBMSYSTEMS[database_system](database_name)
+    # db_connector.commit()
+    db_connector.drop_indexes()
     query_generator = QueryGenerator(
         config["benchmark_name"],
         config["scale_factor"],
@@ -66,7 +68,7 @@ def run():
     number_of_actual_runs = 4
 
     filename = "../data/DSB/dsb.csv"
-    iter = 67
+    iter = 75
     for query, candidate_per_query in zip(workload.queries[iter:], candidates[iter:]):
         print(f"iteration no: {iter}: ")
         entry = [[query.nr, query.text]]
