@@ -69,5 +69,6 @@ PHYISCAL_TO_LOGICAL_OPERATOR_MAP = {
     "Memoize": "",
 }
 
+
 LOGICAL_OPERATORS = ["Scan", "Join", "Aggregate", "Sort"]
 PHYSICAL_OPERATORS = list(PHYISCAL_TO_LOGICAL_OPERATOR_MAP.keys())
