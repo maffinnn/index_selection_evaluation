@@ -4,4 +4,4 @@ This repository contains my work for the final year project for the graduating r
 
 The experiments are done in the file: DISTILL.ipynb while the model training is done in train.py
 
-The trained model is saved at saved_model_stat_dict.pt
+The trained model is saved at saved_model_stat_dict_copy.pt
