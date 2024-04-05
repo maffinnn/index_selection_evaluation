@@ -608,7 +608,7 @@ if __name__ == "__main__":
     print("loading model...")
     # model = torch.load("saved_model.pt")
     model = LinearModel(INPUT_DIM, OUTPUT_DIM).to(device)
-    model.load_state_dict(torch.load("saved_model_stat_dict.pt"))
+    model.load_state_dict(torch.load("saved_model_stat_dict_copy.pt"))
     optimizer = torch.optim.Adam(model.parameters(), lr=0.0000005)
     criterion = MSELoss()
     print(model)
