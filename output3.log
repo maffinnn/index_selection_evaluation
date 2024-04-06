@@ -68534,3 +68534,151 @@ Epoch 5707 | Loss 109322272.61
 	Epoch 5708 | Batch 240 | Loss 37445376.00
 	Epoch 5708 | Batch 280 | Loss 5962682.00
 	Epoch 5708 | Batch 320 | Loss 8107788.00
+	Epoch 5708 | Batch 360 | Loss 7150783.50
+	Epoch 5708 | Batch 400 | Loss 6960355.00
+Epoch 5708 | Loss 108457760.27
+	Epoch 5709 | Batch 0 | Loss 4542726.00
+	Epoch 5709 | Batch 40 | Loss 19383864.00
+	Epoch 5709 | Batch 80 | Loss 4824046.00
+	Epoch 5709 | Batch 120 | Loss 749206208.00
+	Epoch 5709 | Batch 160 | Loss 4888679.50
+	Epoch 5709 | Batch 200 | Loss 6576520.50
+	Epoch 5709 | Batch 240 | Loss 7355143.00
+	Epoch 5709 | Batch 280 | Loss 7037269.50
+	Epoch 5709 | Batch 320 | Loss 7187721.50
+	Epoch 5709 | Batch 360 | Loss 6639157.00
+	Epoch 5709 | Batch 400 | Loss 5226107.00
+Epoch 5709 | Loss 109609509.39
+	Epoch 5710 | Batch 0 | Loss 10469531.00
+	Epoch 5710 | Batch 40 | Loss 13079778.00
+	Epoch 5710 | Batch 80 | Loss 9901818.00
+	Epoch 5710 | Batch 120 | Loss 11402136.00
+	Epoch 5710 | Batch 160 | Loss 19855362.00
+	Epoch 5710 | Batch 200 | Loss 28086924.00
+	Epoch 5710 | Batch 240 | Loss 7419139.50
+	Epoch 5710 | Batch 280 | Loss 7277459.00
+	Epoch 5710 | Batch 320 | Loss 15161491.00
+	Epoch 5710 | Batch 360 | Loss 9834231.00
+	Epoch 5710 | Batch 400 | Loss 35324460.00
+Epoch 5710 | Loss 111568721.04
+	Epoch 5711 | Batch 0 | Loss 342344032.00
+	Epoch 5711 | Batch 40 | Loss 9821701.00
+	Epoch 5711 | Batch 80 | Loss 119367488.00
+	Epoch 5711 | Batch 120 | Loss 5954552.50
+	Epoch 5711 | Batch 160 | Loss 27815480.00
+	Epoch 5711 | Batch 200 | Loss 43424992.00
+	Epoch 5711 | Batch 240 | Loss 6097588.00
+	Epoch 5711 | Batch 280 | Loss 6654224.00
+	Epoch 5711 | Batch 320 | Loss 11795486.00
+	Epoch 5711 | Batch 360 | Loss 12209110.00
+	Epoch 5711 | Batch 400 | Loss 40290960.00
+Epoch 5711 | Loss 109284311.16
+	Epoch 5712 | Batch 0 | Loss 16456626.00
+	Epoch 5712 | Batch 40 | Loss 12705354.00
+	Epoch 5712 | Batch 80 | Loss 137775168.00
+	Epoch 5712 | Batch 120 | Loss 7410466.00
+	Epoch 5712 | Batch 160 | Loss 25451040.00
+	Epoch 5712 | Batch 200 | Loss 6800505.00
+	Epoch 5712 | Batch 240 | Loss 5997964.50
+	Epoch 5712 | Batch 280 | Loss 2515335424.00
+	Epoch 5712 | Batch 320 | Loss 5361698.50
+	Epoch 5712 | Batch 360 | Loss 15159858.00
+	Epoch 5712 | Batch 400 | Loss 15727868.00
+Epoch 5712 | Loss 108098702.61
+	Epoch 5713 | Batch 0 | Loss 12464512.00
+	Epoch 5713 | Batch 40 | Loss 45080960.00
+	Epoch 5713 | Batch 80 | Loss 4887822.00
+	Epoch 5713 | Batch 120 | Loss 7873177.00
+	Epoch 5713 | Batch 160 | Loss 5926190.00
+	Epoch 5713 | Batch 200 | Loss 12389780.00
+	Epoch 5713 | Batch 240 | Loss 7595217.00
+	Epoch 5713 | Batch 280 | Loss 8644806.00
+	Epoch 5713 | Batch 320 | Loss 10568459.00
+	Epoch 5713 | Batch 360 | Loss 14371608.00
+	Epoch 5713 | Batch 400 | Loss 12768540.00
+Epoch 5713 | Loss 107409803.26
+	Epoch 5714 | Batch 0 | Loss 12131050.00
+	Epoch 5714 | Batch 40 | Loss 8169678.50
+	Epoch 5714 | Batch 80 | Loss 40976304.00
+	Epoch 5714 | Batch 120 | Loss 5827792.00
+	Epoch 5714 | Batch 160 | Loss 10925142.00
+	Epoch 5714 | Batch 200 | Loss 15176485.00
+	Epoch 5714 | Batch 240 | Loss 14154870.00
+	Epoch 5714 | Batch 280 | Loss 12854022.00
+	Epoch 5714 | Batch 320 | Loss 1092194816.00
+	Epoch 5714 | Batch 360 | Loss 496876064.00
+	Epoch 5714 | Batch 400 | Loss 8513919.00
+Epoch 5714 | Loss 108343003.39
+	Epoch 5715 | Batch 0 | Loss 5778752.50
+	Epoch 5715 | Batch 40 | Loss 12292356.00
+	Epoch 5715 | Batch 80 | Loss 5216348.00
+	Epoch 5715 | Batch 120 | Loss 93487024.00
+	Epoch 5715 | Batch 160 | Loss 19951990.00
+	Epoch 5715 | Batch 200 | Loss 18952958.00
+	Epoch 5715 | Batch 240 | Loss 7454034.00
+	Epoch 5715 | Batch 280 | Loss 5599175.00
+	Epoch 5715 | Batch 320 | Loss 20427454.00
+	Epoch 5715 | Batch 360 | Loss 244806320.00
+	Epoch 5715 | Batch 400 | Loss 35251444.00
+Epoch 5715 | Loss 109506833.15
+	Epoch 5716 | Batch 0 | Loss 23044108.00
+	Epoch 5716 | Batch 40 | Loss 31344928.00
+	Epoch 5716 | Batch 80 | Loss 5819325.50
+	Epoch 5716 | Batch 120 | Loss 6985204.00
+	Epoch 5716 | Batch 160 | Loss 9734514.00
+	Epoch 5716 | Batch 200 | Loss 10883104.00
+	Epoch 5716 | Batch 240 | Loss 46113220.00
+	Epoch 5716 | Batch 280 | Loss 7170089.00
+	Epoch 5716 | Batch 320 | Loss 7844657.50
+	Epoch 5716 | Batch 360 | Loss 22501008.00
+	Epoch 5716 | Batch 400 | Loss 4773072.50
+Epoch 5716 | Loss 110199524.62
+	Epoch 5717 | Batch 0 | Loss 95283472.00
+	Epoch 5717 | Batch 40 | Loss 6802416.00
+	Epoch 5717 | Batch 80 | Loss 4934810.50
+	Epoch 5717 | Batch 120 | Loss 14310211.00
+	Epoch 5717 | Batch 160 | Loss 21317044.00
+	Epoch 5717 | Batch 200 | Loss 10390047.00
+	Epoch 5717 | Batch 240 | Loss 9982211.00
+	Epoch 5717 | Batch 280 | Loss 5614737.00
+	Epoch 5717 | Batch 320 | Loss 16204946.00
+	Epoch 5717 | Batch 360 | Loss 7954868.00
+	Epoch 5717 | Batch 400 | Loss 13770866.00
+Epoch 5717 | Loss 107649612.49
+	Epoch 5718 | Batch 0 | Loss 10322262.00
+	Epoch 5718 | Batch 40 | Loss 6716990.00
+	Epoch 5718 | Batch 80 | Loss 321395936.00
+	Epoch 5718 | Batch 120 | Loss 29278224.00
+	Epoch 5718 | Batch 160 | Loss 4123359.00
+	Epoch 5718 | Batch 200 | Loss 44597636.00
+	Epoch 5718 | Batch 240 | Loss 6541201.00
+	Epoch 5718 | Batch 280 | Loss 11558444.00
+	Epoch 5718 | Batch 320 | Loss 479843424.00
+	Epoch 5718 | Batch 360 | Loss 493858880.00
+	Epoch 5718 | Batch 400 | Loss 1056591744.00
+Epoch 5718 | Loss 106968850.68
+	Epoch 5719 | Batch 0 | Loss 32462124.00
+	Epoch 5719 | Batch 40 | Loss 5944360.50
+	Epoch 5719 | Batch 80 | Loss 9435718.00
+	Epoch 5719 | Batch 120 | Loss 483135072.00
+	Epoch 5719 | Batch 160 | Loss 87705816.00
+	Epoch 5719 | Batch 200 | Loss 3117412.25
+	Epoch 5719 | Batch 240 | Loss 7826182.00
+	Epoch 5719 | Batch 280 | Loss 2343181056.00
+	Epoch 5719 | Batch 320 | Loss 14007530.00
+	Epoch 5719 | Batch 360 | Loss 165006224.00
+	Epoch 5719 | Batch 400 | Loss 15764569.00
+Epoch 5719 | Loss 106654320.34
+	Epoch 5720 | Batch 0 | Loss 14854036.00
+	Epoch 5720 | Batch 40 | Loss 9325315.00
+	Epoch 5720 | Batch 80 | Loss 111404888.00
+	Epoch 5720 | Batch 120 | Loss 5527224.00
+	Epoch 5720 | Batch 160 | Loss 9186396.00
+	Epoch 5720 | Batch 200 | Loss 9123669.00
+	Epoch 5720 | Batch 240 | Loss 9516246.00
+	Epoch 5720 | Batch 280 | Loss 5936377.50
+	Epoch 5720 | Batch 320 | Loss 11271668.00
+	Epoch 5720 | Batch 360 | Loss 130501808.00
+	Epoch 5720 | Batch 400 | Loss 7914362.50
+Epoch 5720 | Loss 108367453.04
+	Epoch 5721 | Batch 0 | Loss 17524432.00
